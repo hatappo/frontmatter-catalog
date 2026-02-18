@@ -1,6 +1,7 @@
 /**
  * Astroplate blog post frontmatter schema.
  * @source https://github.com/zeon-studio/astroplate
+ * @canonical https://github.com/zeon-studio/astroplate/blob/main/src/content.config.ts blogCollection.schema
  * @copyright zeon-studio (https://github.com/zeon-studio)
  * @attribution Schema structure and descriptions are derived from the source documentation.
  * @tag astro

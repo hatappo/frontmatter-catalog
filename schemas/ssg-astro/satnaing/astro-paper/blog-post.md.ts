@@ -1,6 +1,8 @@
 
 /**
  * Astro Paper post frontmatter schema.
+ * @source https://astro-paper.pages.dev/posts/adding-new-posts-in-astropaper-theme/
+ * @canonical https://github.com/satnaing/astro-paper/blob/main/src/content.config.ts blog.schema
  * @copyright satnaing (https://github.com/satnaing)
  * @attribution Schema structure and descriptions are derived from the source documentation.
  * @tag astro
@@ -21,14 +23,12 @@ export default interface BlogPost {
    * Modified datetime in ISO 8601 format. Only add this when the post is modified.
    * @format date-time
    */
-  modDatetime?: string;
+  modDatetime?: string | null;
   /**
    * Author of the post.
    * @default SITE.author
    */
   author?: string;
-  /** Slug for the post. If not specified, it will be auto-generated from the file name. */
-  slug?: string;
   /**
    * Whether to display this post in the featured section of home page.
    * @default false
