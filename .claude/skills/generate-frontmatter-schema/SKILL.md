@@ -10,8 +10,8 @@ description: Markdown の frontmatter のスキーマを Typescript の interfac
 ディレクトリやファイルは既に作成済みである場合もあります。その場合は既存のものを利用してください。
 
 - ディレクトリ
-  - GitHub 関連の場合は `schemas/github.com/OWNER/REPO/` の形式のディレクトリに配置します。
-  - その他の場合は `schemas/others/` の直下に適宜サブフォルダを作成します。
+  - `schemas` 直下がカテゴリのディレクトリになっています。カテゴリはスキーマの対象となるものや関連するトピックに基づいて適切に選択あるいは作成します。
+  - カテゴリのディレクトリ内にさらにサブディレクトリを配置してください。 GitHub 関連であれば、`schemas/CATEGORY/OWNER/REPO/` としてください。それ以外の場合は、 `schemas/CATEGORY/` 配下に適切な命名のフォルダを配置してください。
 - ファイル名: その frontmatter スキーマを持つ Markdown ファイルを表す簡潔な名称をケバブケースで記述します。
   例えばブログ投稿の frontmatter スキーマであれば `blog-post.md.ts`、ドキュメントページの frontmatter スキーマであれば `doc-page.ts` などとします。
 
