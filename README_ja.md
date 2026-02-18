@@ -19,20 +19,34 @@ schemas/
 │   ├── anthropics/claude-code/
 │   ├── openai/codex/
 │   └── cursor/
-├── ssg-astro/             # Astro テーマ
-│   └── {owner}/{repo}/
-├── ssg-hugo/              # Hugo
-├── ssg-jekyll/            # Jekyll
 ├── blog-platform/         # ブログプラットフォーム
 │   ├── zenn/
 │   ├── qiita/
 │   └── devto/
+├── cms/                   # コンテンツ管理システム
+│   └── nuxt/content/
+├── docs/                  # ドキュメントフレームワーク
+│   ├── shuding/nextra/
+│   └── mintlify/mintlify/
 ├── note-taking/           # ノートテイキングアプリ
 │   ├── obsidian/
 │   └── dendron/
+├── publishing/            # パブリッシングツール
+│   └── quarto-dev/quarto/
+├── recipe/                # レシピフォーマット
+│   └── cooklang/
 ├── slide/                 # プレゼンテーションツール
 │   ├── slidevjs/slidev/
 │   └── marp-team/marp-core/
+├── ssg/                   # 静的サイトジェネレーター（その他）
+│   └── hexojs/hexo/
+├── ssg-astro/             # Astro テーマ
+│   └── {owner}/{repo}/
+├── ssg-docusaurus/        # Docusaurus
+├── ssg-eleventy/          # Eleventy
+├── ssg-hugo/              # Hugo
+├── ssg-jekyll/            # Jekyll
+├── ssg-vitepress/         # VitePress
 └── ...
 ```
 
