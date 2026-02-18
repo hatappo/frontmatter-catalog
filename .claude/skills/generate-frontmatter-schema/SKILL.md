@@ -31,6 +31,8 @@ description: Markdown の frontmatter のスキーマを Typescript の interfac
   - `@attribution` 固定文字列: `Schema structure and descriptions are derived from the source documentation.`
 - interface の JSDoc には次のタグを任意で含めます。
   - `@tag`: スキーマのカテゴリや関連するトピックを表すタグ。複数ある場合は複数行で記載します。
+  - `@canonical`: 本家で定義されているスキーマの場所。URL とスキーマを取得できる変数名をスペース区切りで記載します。例えば Astro テーマの場合、`content.config.ts` ファイル内で Zod スキーマが定義されているため、そのファイルの URL と変数名（例: `blog.schema`）を記載します。
+    - 例: `@canonical https://github.com/satnaing/astro-paper/blob/main/src/content.config.ts blog.schema`
 
 ## Interface のプロパティ
 

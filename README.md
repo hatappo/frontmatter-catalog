@@ -9,17 +9,67 @@ English | [日本語](README_ja.md)
 A collection of schema definitions for Markdown frontmatter
 used by various tools and services.
 
+## Directory Structure
+
+Schema files are organized under `schemas/` directory:
+
+```
+schemas/
+├── ai/                    # AI coding agents
+│   ├── anthropics/claude-code/
+│   ├── openai/codex/
+│   └── cursor/
+├── ssg-astro/             # Astro themes
+│   └── {owner}/{repo}/
+├── ssg-hugo/              # Hugo
+├── ssg-jekyll/            # Jekyll
+├── blog-platform/         # Blog platforms
+│   ├── zenn/
+│   ├── qiita/
+│   └── devto/
+├── note-taking/           # Note-taking apps
+│   ├── obsidian/
+│   └── dendron/
+├── slide/                 # Presentation tools
+│   ├── slidevjs/slidev/
+│   └── marp-team/marp-core/
+└── ...
+```
+
+## File Naming
+
+Schema files use the following naming convention:
+
+- `*.md.ts` — Markdown frontmatter schema
+- `*.yaml.ts` — YAML configuration file schema
+- `*.toml.ts` — TOML configuration file schema
+
+## Schema Format
+
+Schemas are defined as TypeScript interfaces with JSDoc comments.
+
+### Interface JSDoc Tags
+
+| Tag | Required | Description |
+|-----|----------|-------------|
+| `@source` | Yes | URL of the original documentation. Multiple URLs can be specified on separate lines. |
+| `@copyright` | Yes | Copyright holder. Format: `owner (https://github.com/owner)` |
+| `@attribution` | Yes | Fixed string: `Schema structure and descriptions are derived from the source documentation.` |
+| `@tag` | No | Category tags. Multiple tags can be specified on separate lines. |
+| `@canonical` | No | Location of the original schema definition (e.g., Zod schema in Astro themes). Format: `URL variable.schema` |
+
+### Property JSDoc Tags
+
+| Tag | Description |
+|-----|-------------|
+| `@default` | Default value for the property |
+| `@example` | Example value(s). Multiple examples can be specified on separate lines. |
+| `@format` | Value format: `date-time`, `date`, `time`, or `email` |
+| `@pattern` | Regex pattern for custom formats |
+
 ## Usage
 
 TODO:
-
-## Schema Metadata
-
-Each schema file includes the following JSDoc tags:
-
-- `@source` — URL of the original documentation
-- `@copyright` — Copyright holder of the original documentation
-- `@tag` — Category tags for the schema
 
 ## Attribution
 
